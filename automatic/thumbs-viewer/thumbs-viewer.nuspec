@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>thumbs-viewer</id>
-    <version>1.0.2.8</version>
+    <version>1.0.2.9</version>
     <packageSourceUrl>https://github.com/FranklinYu/chocolatey-packages/tree/master/automatic/thumbs-viewer</packageSourceUrl>
     <owners>Franklin Yu</owners>
     <!-- ============================== -->
