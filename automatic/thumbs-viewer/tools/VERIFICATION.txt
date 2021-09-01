@@ -3,8 +3,8 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Homepage: https://thumbsviewer.github.io/
-SHA-256 of 32-bit: 7F2016C2E1E9B14AB61724C1A8CD00D9CBCE9FF697AB4173E28CC9C600E49BA3
-SHA-256 of 64-bit: CF264DCF4C1CF0B018D7DB21CCAE4168DB0ED0E3DA25797B622B0C740D7EC533
+SHA-256 of 32-bit: DCAE9D45A6FC0211A203FE5F98CB39914290CEB0695FA53794890446AB9D8520
+SHA-256 of 64-bit: B27426BB97561E48A7CE6DFF4578CAEC74101AF82B49BE84D94BA5FF36FFEC58
 URL of 'LICENSE.txt': https://www.gnu.org/licenses/gpl.html
 
 GPL v3+ is indicated on top of source files.
