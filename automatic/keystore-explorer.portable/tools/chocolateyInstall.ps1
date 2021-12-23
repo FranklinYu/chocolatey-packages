@@ -1,16 +1,14 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 $folder = 'kse-542'
 
+$filename = ''
 $packageArgs = @{
     packageName = $env:ChocolateyPackageName
-    unzipLocation = $toolsDir
-    url = 'https://github.com/kaikramer/keystore-explorer/releases/download/v5.4.2/kse-542.zip'
-    checksum = '5ff6c4081483f360b600662f14b99bd050e72f279110bdc216608273e3a89446'
-    checksumType = 'sha256'
+    destination = $toolsDir
+    fileFullPath64 = Join-Path -Path $toolsDir -ChildPath $filename
 }
-
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 if (Test-ProcessAdminRights) {
     $specialFolder = [Environment+SpecialFolder]::CommonPrograms

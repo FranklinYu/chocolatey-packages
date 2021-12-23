@@ -9,16 +9,21 @@ function global:au_GetLatest {
     $zip = $latest.assets | Where-Object { $_.name.EndsWith('.zip') }
     $latest.tag_name -match 'v(\d+\.\d+\.\d+)'
     @{
-        Version = $Matches[1]; Url = $zip.browser_download_url
-        Folder = $zip.name.Substring(0, $zip.name.Length - 4)
+        Version = $Matches[1]
+        Url32 = $zip.browser_download_url
+        Folder = $zip.name.Substring(0, $zip.name.Length - 4) # remove ".zip"
+        Filename32 = $zip.name
     }
 }
+
+function global:au_BeforeUpdate { Get-RemoteFiles -Purge }
 
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
             '[$]folder\s*=.*' = "`$folder = '{0}'" -f $Latest.Folder
-            '(^\s*url\s*)=.*' = "`$1= '{0}'" -f $Latest.Url
+            '[$]filename\s*=.*' = "`$filename = '{0}'" -f $Latest.Filename32
+            '(^\s*url\s*)=.*' = "`$1= '{0}'" -f $Latest.Url32
             '(^\s*checksum\s*)=.*' = "`$1= '{0}'" -f $Latest.Checksum32
         }
     }
