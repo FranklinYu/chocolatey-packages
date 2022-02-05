@@ -2,9 +2,9 @@
 
 $packageArgs = @{
   packageName   = 'javadecompiler-gui'
-  url           = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-windows-1.4.0.zip'
-  checksum      = '4cf79cbae4b355cf2b9cd332462491a8'
-  checksumType  = 'md5'
+  url           = 'https://github.com/java-decompiler/jd-gui/releases/download/v1.6.6/jd-gui-windows-1.6.6.zip'
+  checksum      = '79c231399d3d39d14fce7607728336acb47a6e02e9e1c5f2fa16e2450c0c46cb'
+  checksumType  = 'sha256'
   unzipLocation = $toolsDir
 }
 
@@ -19,7 +19,7 @@ else
 $menuPrograms = [Environment]::GetFolderPath($specialFolder)
 $shotrcutArgs = @{
   shortcutFilePath = "$menuPrograms\Java Decompiler.lnk"
-  targetPath       = "$toolsDir\jd-gui-windows-1.4.0\jd-gui.exe"
+  targetPath       = "$toolsDir\jd-gui-windows-1.6.6\jd-gui.exe"
 }
 
 Install-ChocolateyZipPackage @packageArgs
