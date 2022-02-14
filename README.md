@@ -9,7 +9,7 @@ This contains Chocolatey packages, both manually and automatically maintained. Y
 
 ## Folder Structure
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using [AU](https://chocolatey.org/packages/au).
+* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using AU.
 * icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 * manual - where packages that are not automatic are kept.
 * setup - items for prepping the system to ensure for auto packaging.
@@ -22,4 +22,4 @@ For setting up your own automatic package repository, please see [Automatic Pack
 * PowerShell v5+.
 * The [AU module](https://chocolatey.org/packages/au).
 
-For daily operations check out the AU packages [template README](https://github.com/majkinetor/au-packages-template/blob/master/README.md).
+For daily operations check out the AU packages template ReadMe.
