@@ -17,7 +17,7 @@ if (! (Select-String -Path $tempFile -Pattern 64-Bit)) {
 }
 Remove-Item -Path $tempFile
 
-$filename = "jadx-1.3.4.zip"
+$filename = "jadx-1.3.5.zip"
 $packageArgs = @{
     packageName = $env:ChocolateyPackageName
     destination = $toolsDir
