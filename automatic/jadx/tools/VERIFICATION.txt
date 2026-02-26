@@ -3,7 +3,7 @@ Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
 Latest release: https://github.com/skylot/jadx/releases
-SHA-256: F6F0D51A4AF63E430045AA64C4F110B89B53E82EB596CCB3A4BD3F865ADEC70E
+SHA-256: 38A5766D3C8170C41566B4B13EA0EDE2430E3008421AF4927235C2880234D51A
 
 The jar file can be downloaded in latest release page.
 
